@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Project</title>
+</head>
+<body>
+    <!-- Start Header -->
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills" id="navBar">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/HTML/about.html" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="/HTML/contact.html" class="nav-link">Contact us</a></li>
+            <li class="nav-item">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                  <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg>
+              </a>
+            </li>
+            <li id="count" class="nav-item nav-link ">(0)</li>
+          </ul>
+        </header>
+      </div>
+    <!-- End Header -->
+
+    <!-- Start Slider -->
+    <div class="imgContainer" style=" width:100%;height: 500px;">
+      <img id="img" style=" width:100%;height:100%;" src="/Src/img/Clothes/1_clothes.jpg" alt="">
+      <a class="btn" id="prev" onclick="previous()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+        </svg>        
+      </a>
+      <a class="btn " id="next" onclick="next()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+        </svg>        
+      </a>
+  </div>
+    <!-- <div ></div> -->
+    <!-- End Slider -->
+
+    <!-- Start section -->
+    <section>
+        <article>
+            <!-- <div class="container"> -->
+                <div class="article row  bg-opacity-25 m-1 bg-primary">
+                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores voluptates quo ea quibusdam iusto expedita ipsum quaerat, suscipit commodi assumenda perspiciatis repellendus cumque numquam labore enim rem, id fuga?
+                    Saepe accusamus, dolore recusandae necessitatibus vitae commodi cum culpa eveniet quasi voluptatem molestias ullam. A asperiores quo eius sint in ex eveniet nam vitae. Sapiente architecto itaque repellendus delectus unde!
+                    </div>
+                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores voluptates quo ea quibusdam iusto expedita ipsum quaerat, suscipit commodi assumenda perspiciatis repellendus cumque numquam labore enim rem, id fuga?
+                    Saepe accusamus, dolore recusandae necessitatibus vitae commodi cum culpa eveniet quasi voluptatem molestias ullam. A asperiores quo eius sint in ex eveniet nam vitae. Sapiente architecto itaque repellendus delectus unde!
+                    </div>
+                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores voluptates quo ea quibusdam iusto expedita ipsum quaerat, suscipit commodi assumenda perspiciatis repellendus cumque numquam labore enim rem, id fuga?
+                    Saepe accusamus, dolore recusandae necessitatibus vitae commodi cum culpa eveniet quasi voluptatem molestias ullam. A asperiores quo eius sint in ex eveniet nam vitae. Sapiente architecto itaque repellendus delectus unde!
+                    </div>
+                </div>
+            <!-- </div> -->
+        </article>
+    </section>
+    <!-- End section -->
+
+    <!-- Start Market Section -->
+    <!-- Filtter -->
+    <div style="text-align: center;">
+        <button class="btn btn-info m-3 " id="phonesEvent"  >Phones</button>
+        <button class="btn btn-info m-3 " id="makupeEvent"  >Makupe</button>
+        <button class="btn btn-info m-3 "  id="clothesEvent" >Clothes</button>
+        <button class="btn btn-info m-3 " id="carsEvent"  >Cars</button>
+        <button class="btn btn-danger m-3" id="restEvent"   >Reset</button>
+    </div>
+
+    <!-- Cards -->
+    <!-- <div class="bg-white border rounded-5"> -->
+
+        <!-- Clothes  -->
+        <div id="clothes" class="row mb-4 m-2 ">
+          <!-- Grid column -->
+          <div class="col-md-4">
+            <!-- Card -->
+            <!-- Start Phones -->
+            <div class="card" style="max-width: 22rem;">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img class="card-img-top" src="/Src/img/Clothes/1_clothes.jpg" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                </a>
+              </div>
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title">Clothes</h4>
+                <!-- Text -->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Button -->
+                <a href="#" class="btn btn-primary waves-effect waves-light " onclick="addBtn()">Add</a>
+              </div>
+  
+            </div>
+            
+              <!-- Card -->
+            </div>
+
+            <div class="col-md-4">
+                <!-- Card -->
+                <!-- Start Phones -->
+                <div class="card" style="max-width: 22rem;">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                    <img class="card-img-top" src="/Src/img/Clothes/2_clothes.jpg" alt="Card image cap">
+                    <a href="#!">
+                      <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                    </a>
+                  </div>
+                  <!-- Card content -->
+                  <div class="card-body">
+                    <!-- Title -->
+                    <h4 class="card-title">Clothes</h4>
+                    <!-- Text -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                      content.</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary waves-effect waves-light "onclick="addBtn()">Add</a>
+                  </div>
+      
+                </div>
+                
+                  <!-- Card -->
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Card -->
+                    <!-- Start Phones -->
+                    <div class="card" style="max-width: 22rem;">
+                      <!-- Card image -->
+                      <div class="view overlay">
+                        <img class="card-img-top" src="/Src/img/Clothes/3_clothes.jpg" alt="Card image cap">
+                        <a href="#!">
+                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                        </a>
+                      </div>
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">Clothes</h4>
+                        <!-- Text -->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                          content.</p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                      </div>
+          
+                    </div>
+                    
+                      <!-- Card -->
+                    </div>
+
+                
+            <!-- End Phones -->
+
+          <!-- Grid column -->
+        </div>
+
+
+        <!-- Makupe -->
+      <div id="makupe" class="row mb-4 m-2 ">
+          <!-- Grid column -->
+          <div class="col-md-4">
+            <!-- Card -->
+            <!-- Start Phones -->
+            <div class="card" style="max-width: 22rem;">
+              <!-- Card image -->
+              <div class="view overlay">
+                <img class="card-img-top" src="/Src/img/Makupe/1_makupe.jpg" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                </a>
+              </div>
+              <!-- Card content -->
+              <div class="card-body">
+                <!-- Title -->
+                <h4 class="card-title">Makupe</h4>
+                <!-- Text -->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                  content.</p>
+                <!-- Button -->
+                <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+              </div>
+  
+            </div>
+            
+              <!-- Card -->
+            </div>
+
+            <div class="col-md-4">
+                <!-- Card -->
+                <!-- Start Phones -->
+                <div class="card" style="max-width: 22rem;">
+                  <!-- Card image -->
+                  <div class="view overlay">
+                    <img class="card-img-top" src="/Src/img/Makupe/2_makupe.jpg" alt="Card image cap">
+                    <a href="#!">
+                      <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                    </a>
+                  </div>
+                  <!-- Card content -->
+                  <div class="card-body">
+                    <!-- Title -->
+                    <h4 class="card-title">Makupe</h4>
+                    <!-- Text -->
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                      content.</p>
+                    <!-- Button -->
+                    <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                  </div>
+      
+                </div>
+                
+                  <!-- Card -->
+                </div>
+
+                <div class="col-md-4">
+                    <!-- Card -->
+                    <!-- Start Phones -->
+                    <div class="card" style="max-width: 22rem;">
+                      <!-- Card image -->
+                      <div class="view overlay">
+                        <img class="card-img-top" src="/Src/img/Makupe/3_makupe.jpg" alt="Card image cap">
+                        <a href="#!">
+                          <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                        </a>
+                      </div>
+                      <!-- Card content -->
+                      <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title">Makupe</h4>
+                        <!-- Text -->
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                          content.</p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                      </div>
+          
+                    </div>
+                    
+                      <!-- Card -->
+                    </div>
+        </div>
+
+        <!-- Phones -->
+        <div id="phones" class="row mb-4 m-2 ">
+            <!-- Grid column -->
+            <div class="col-md-4">
+              <!-- Card -->
+              <!-- Start Phones -->
+              <div class="card" style="max-width: 22rem;">
+                <!-- Card image -->
+                <div class="view overlay">
+                  <img class="card-img-top" src="/Src/img/Phones/1_phones.jpg" alt="Card image cap">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                  </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body">
+                  <!-- Title -->
+                  <h4 class="card-title">Phones</h4>
+                  <!-- Text -->
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <!-- Button -->
+                  <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                </div>
+    
+              </div>
+              
+                <!-- Card -->
+              </div>
+  
+              <div class="col-md-4">
+                  <!-- Card -->
+                  <!-- Start Phones -->
+                  <div class="card" style="max-width: 22rem;">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" src="/Src/img/Phones/2_phones.jpg" alt="Card image cap">
+                      <a href="#!">
+                        <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                      </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body">
+                      <!-- Title -->
+                      <h4 class="card-title">Phones</h4>
+                      <!-- Text -->
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                      <!-- Button -->
+                      <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                    </div>
+        
+                  </div>
+                  
+                    <!-- Card -->
+                  </div>
+  
+                  <div class="col-md-4">
+                      <!-- Card -->
+                      <!-- Start Phones -->
+                      <div class="card" style="max-width: 22rem;">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                          <img class="card-img-top" src="/Src/img/Phones/3_phones.jpg" alt="Card image cap">
+                          <a href="#!">
+                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                          </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body">
+                          <!-- Title -->
+                          <h4 class="card-title">Phones</h4>
+                          <!-- Text -->
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                          <!-- Button -->
+                          <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                        </div>
+            
+                      </div>
+                      
+                        <!-- Card -->
+                      </div>
+          </div>
+
+          <!-- Cars -->
+          <div id="cars" class="row mb-4 m-2 ">
+            <!-- Grid column -->
+            <div class="col-md-4">
+              <!-- Card -->
+              <!-- Start Phones -->
+              <div class="card" style="max-width: 22rem;">
+                <!-- Card image -->
+                <div class="view overlay">
+                  <img class="card-img-top" src="/Src/img/Cars/1_cars.jpg" alt="Card image cap">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                  </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body">
+                  <!-- Title -->
+                  <h4 class="card-title">Cars</h4>
+                  <!-- Text -->
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <!-- Button -->
+                  <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                </div>
+    
+              </div>
+              
+                <!-- Card -->
+              </div>
+  
+              <div class="col-md-4">
+                  <!-- Card -->
+                  <!-- Start Phones -->
+                  <div class="card" style="max-width: 22rem;">
+                    <!-- Card image -->
+                    <div class="view overlay">
+                      <img class="card-img-top" src="/Src/img/Cars/2_cars.jpg" alt="Card image cap">
+                      <a href="#!">
+                        <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                      </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body">
+                      <!-- Title -->
+                      <h4 class="card-title">Cars</h4>
+                      <!-- Text -->
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</p>
+                      <!-- Button -->
+                      <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                    </div>
+        
+                  </div>
+                  
+                    <!-- Card -->
+                  </div>
+  
+                  <div class="col-md-4">
+                      <!-- Card -->
+                      <!-- Start Phones -->
+                      <div class="card" style="max-width: 22rem;">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                          <img class="card-img-top" src="/Src/img/Cars/3_cars.jpg" alt="Card image cap">
+                          <a href="#!">
+                            <div class="mask rgba-white-slight waves-effect waves-light"></div>
+                          </a>
+                        </div>
+                        <!-- Card content -->
+                        <div class="card-body">
+                          <!-- Title -->
+                          <h4 class="card-title">Cars</h4>
+                          <!-- Text -->
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                          <!-- Button -->
+                          <a href="#" class="btn btn-primary waves-effect waves-light" onclick="addBtn()">Add</a>
+                        </div>
+                      </div>
+                        <!-- Card -->
+                      </div>
+              <!-- End Phones -->
+            <!-- Grid column -->
+          </div>
+    <!-- End Market Section -->
+
+    
+    <!-- Start section -->
+    <section>
+        <article>
+            <!-- <div class="container"> -->
+                <div class="article row  bg-opacity-25 m-1 bg-primary">
+                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores voluptates quo ea quibusdam iusto expedita ipsum quaerat, suscipit commodi assumenda perspiciatis repellendus cumque numquam labore enim rem, id fuga?
+                    Saepe accusamus, dolore recusandae necessitatibus vitae commodi cum culpa eveniet quasi voluptatem molestias ullam. A asperiores quo eius sint in ex eveniet nam vitae. Sapiente architecto itaque repellendus delectus unde!
+                    </div>
+                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores voluptates quo ea quibusdam iusto expedita ipsum quaerat, suscipit commodi assumenda perspiciatis repellendus cumque numquam labore enim rem, id fuga?
+                    Saepe accusamus, dolore recusandae necessitatibus vitae commodi cum culpa eveniet quasi voluptatem molestias ullam. A asperiores quo eius sint in ex eveniet nam vitae. Sapiente architecto itaque repellendus delectus unde!
+                    </div>
+                    <div class="col-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam asperiores voluptates quo ea quibusdam iusto expedita ipsum quaerat, suscipit commodi assumenda perspiciatis repellendus cumque numquam labore enim rem, id fuga?
+                    Saepe accusamus, dolore recusandae necessitatibus vitae commodi cum culpa eveniet quasi voluptatem molestias ullam. A asperiores quo eius sint in ex eveniet nam vitae. Sapiente architecto itaque repellendus delectus unde!
+                    </div>
+                </div>
+            <!-- </div> -->
+        </article>
+    </section>
+    <!-- End section -->
+
+
+    <!-- Start footer -->
+    <footer class="bg-light text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Facebook -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #3b5998;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            <!-- Twitter -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #55acee;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            <!-- Google -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #dd4b39;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            <!-- Instagram -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #ac2bac;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+            <!-- Linkedin -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #0082ca;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <!-- Github -->
+            <a
+              class="btn text-white btn-floating m-1"
+              style="background-color: #333333;"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: Ahmed Kosary
+          <a href="#top">
+            <svg id="arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="black" class="bi bi-arrow-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+            </svg>
+          </a>
+
+          
+        </div>
+        <!-- Copyright -->        
+      </footer>
+      <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="/JS/main.js"></script>
+    <script src="/JS/cookie.js"></script>
+</body>
+</html>
